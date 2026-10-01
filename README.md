@@ -146,19 +146,19 @@ OPENAI_API_KEY=...
 ### 4.2 환경 점검
 
 ```bash
-uv run --locked python src/check_env.py
+uv run --locked python -m src.check_env
 ```
 
 ### 4.3 평가셋 검증
 
 ```bash
-uv run --locked python src/validate_evalset.py
+uv run --locked python -m src.validate_evalset
 ```
 
 ### 4.4 Baseline 실행
 
 ```bash
-uv run --locked python src/run_baseline.py
+uv run --locked python -m src.run_baseline
 ```
 
 ### 4.5 개선 전·후 비교
@@ -166,13 +166,13 @@ uv run --locked python src/run_baseline.py
 Retrieval만 비교:
 
 ```bash
-uv run --locked python src/run_compare.py
+uv run --locked python -m src.run_compare
 ```
 
 Generation까지 포함:
 
 ```bash
-uv run --locked python src/run_compare.py --with-generation
+uv run --locked python -m src.run_compare --with-generation
 ```
 
 실행 결과는 `results/runtime_comparison.md`에 저장됩니다.
@@ -207,7 +207,7 @@ AI로 질문을 확장할 수 있지만, 자동 생성 결과를 바로 Gold Set
 AI 확장 예제:
 
 ```bash
-uv run --locked python src/augment_evalset.py
+uv run --locked python -m src.augment_evalset
 ```
 
 생성 결과는 `data/eval/augmented_candidates.jsonl`에 **review_status=pending** 상태로 저장됩니다.
