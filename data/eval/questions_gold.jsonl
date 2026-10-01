@@ -1,0 +1,20 @@
+{"id":"Q01","question":"Windows에서 AsterDesk를 설치하는 기본 절차는 무엇인가요?","category":"fact","gold_doc_ids":["01_installation"],"gold_keywords":["AsterDeskSetup.exe","Workspace ID"],"answerable":true}
+{"id":"Q02","question":"맥에서는 AsterDesk를 어떤 방식으로 설치하나요?","category":"paraphrase","gold_doc_ids":["01_installation"],"gold_keywords":["AsterDesk.dmg","Applications"],"answerable":true}
+{"id":"Q03","question":"로그인 비밀번호를 계속 틀리면 계정은 어떻게 되나요?","category":"paraphrase","gold_doc_ids":["02_account_access"],"gold_keywords":["5회","30분"],"answerable":true}
+{"id":"Q04","question":"관리자 계정에 반드시 적용해야 하는 추가 인증은 무엇인가요?","category":"fact","gold_doc_ids":["02_account_access","06_security"],"gold_keywords":["MFA"],"answerable":true}
+{"id":"Q05","question":"ERR-NET-403 오류의 원인과 우선 점검 순서를 알려 주세요.","category":"keyword","gold_doc_ids":["03_network","05_error_codes"],"gold_keywords":["ERR-NET-403","TCP 443"],"answerable":true}
+{"id":"Q06","question":"AsterDesk가 외부 서비스와 통신할 때 사용하는 포트는 무엇인가요?","category":"fact","gold_doc_ids":["03_network"],"gold_keywords":["TCP 443"],"answerable":true}
+{"id":"Q07","question":"프록시 환경에서 연결 장애가 발생하면 무엇을 확인해야 하나요?","category":"paraphrase","gold_doc_ids":["03_network"],"gold_keywords":["프록시","HTTPS"],"answerable":true}
+{"id":"Q08","question":"Linux 서버의 기본 백업 디렉터리는 어디인가요?","category":"keyword","gold_doc_ids":["04_backup_restore"],"gold_keywords":["/var/lib/asterdesk/backup/"],"answerable":true}
+{"id":"Q09","question":"백업 보관 기간과 관리자가 설정할 수 있는 최대 기간을 알려 주세요.","category":"compound","gold_doc_ids":["04_backup_restore"],"gold_keywords":["14일","90일"],"answerable":true}
+{"id":"Q10","question":"복구 작업 전에 반드시 해야 하는 일은 무엇인가요?","category":"fact","gold_doc_ids":["04_backup_restore"],"gold_keywords":["서비스를 중지"],"answerable":true}
+{"id":"Q11","question":"ERR-AUTH-017이 발생했을 때 조치 순서를 알려 주세요.","category":"keyword","gold_doc_ids":["05_error_codes"],"gold_keywords":["ERR-AUTH-017","로그아웃"],"answerable":true}
+{"id":"Q12","question":"동기화 충돌 오류 코드는 무엇이고 어떻게 처리하나요?","category":"compound","gold_doc_ids":["05_error_codes"],"gold_keywords":["ERR-SYNC-221","로컬 변경 파일을 백업"],"answerable":true}
+{"id":"Q13","question":"API Key를 GitHub에 올려도 되나요?","category":"security","gold_doc_ids":["06_security"],"gold_keywords":["Git 저장소에 저장하지 않는다"],"answerable":true}
+{"id":"Q14","question":"보안 감사 로그는 기본적으로 얼마나 보관하나요?","category":"fact","gold_doc_ids":["06_security"],"gold_keywords":["180일"],"answerable":true}
+{"id":"Q15","question":"AsterDesk-ENT는 무엇을 의미하나요?","category":"keyword","gold_doc_ids":["07_license"],"gold_keywords":["Enterprise"],"answerable":true}
+{"id":"Q16","question":"Enterprise 버전에 추가되는 주요 기능을 알려 주세요.","category":"fact","gold_doc_ids":["07_license"],"gold_keywords":["SSO","중앙 정책 관리","고급 감사 로그"],"answerable":true}
+{"id":"Q17","question":"Windows에서 AsterDesk 로그는 어디에 저장되나요?","category":"keyword","gold_doc_ids":["08_operations"],"gold_keywords":["C:\\ProgramData\\AsterDesk\\logs\\"],"answerable":true}
+{"id":"Q18","question":"일반 애플리케이션 로그의 기본 보관 기간은 얼마인가요?","category":"fact","gold_doc_ids":["08_operations"],"gold_keywords":["30일"],"answerable":true}
+{"id":"Q19","question":"Enterprise 라이선스의 월 사용료는 얼마인가요?","category":"unanswerable","gold_doc_ids":[],"gold_keywords":[],"answerable":false}
+{"id":"Q20","question":"AsterDesk 고객센터 전화번호를 알려 주세요.","category":"unanswerable","gold_doc_ids":[],"gold_keywords":[],"answerable":false}
