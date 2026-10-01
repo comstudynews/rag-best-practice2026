@@ -146,11 +146,15 @@ def generation_auto_checks(case, answer):
     coverage = keyword_coverage(answer, case.gold_keywords)
 
     if case.answerable:
-        source_citation_ok = any(doc_id in answer for doc_id in case.gold_doc_ids)
+        cited = {doc_id for doc_id in case.gold_doc_ids if doc_id in answer}
+        if case.gold_doc_policy == "all":
+            source_citation_ok = set(case.gold_doc_ids).issubset(cited)
+        else:
+            source_citation_ok = bool(cited)
         abstention_ok = None
     else:
         source_citation_ok = None
-        abstention_ok = FALLBACK_ANSWER in answer
+        abstention_ok = answer.strip().startswith(FALLBACK_ANSWER)
 
     return {
         "keyword_coverage": coverage,
@@ -161,6 +165,17 @@ def generation_auto_checks(case, answer):
 
 def format_doc_ids(docs):
     return ", ".join(doc.metadata.get("doc_id", "unknown") for doc in docs)
+
+
+def format_docs_markdown(docs, max_chars=220):
+    lines = []
+    for rank, doc in enumerate(docs, start=1):
+        doc_id = doc.metadata.get("doc_id", "unknown")
+        excerpt = " ".join(doc.page_content.split())
+        if len(excerpt) > max_chars:
+            excerpt = excerpt[: max_chars - 3] + "..."
+        lines.append(f"{rank}. `{doc_id}` — {excerpt}")
+    return "\n".join(lines) if lines else "- 검색 결과 없음"
 
 
 def compare_rank(base_rank, improved_rank):
