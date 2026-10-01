@@ -1,6 +1,6 @@
 # RAG Architecture
 
-## Baseline
+## 1. Baseline
 
 ```text
 Knowledge Documents
@@ -22,7 +22,7 @@ ChatOpenAI
 Answer + Source IDs
 ```
 
-## Improved
+## 2. Improved Reference
 
 ```text
                           ┌─ Dense Retriever ─┐
@@ -36,9 +36,12 @@ Question ─────────────────┤                 
                                                            Answer + Source IDs
 ```
 
-## 설계 원칙
+## 3. 비교 원칙
 
-- Baseline과 Improved의 문서·Chunk·Embedding 조건은 동일하게 유지합니다.
+- Baseline과 Improved의 문서·Chunk·Embedding·Top-K 조건을 동일하게 유지합니다.
 - 개선 전략 외의 변수를 가능한 한 고정합니다.
-- Retrieval과 Generation을 분리하여 평가합니다.
-- 질문별 검색 결과를 기록하여 평균 지표만으로 판단하지 않습니다.
+- Baseline 결과를 먼저 확인한 후 문제를 진단합니다.
+- 동일한 Gold Set으로 재평가합니다.
+- Retrieval과 Generation을 분리하여 분석합니다.
+- 평균 지표뿐 아니라 질문별 결과도 확인합니다.
+- 개선되지 않은 결과와 Trade-off를 숨기지 않습니다.

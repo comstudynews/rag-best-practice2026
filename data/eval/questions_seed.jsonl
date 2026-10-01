@@ -1,5 +1,5 @@
-{"id":"S01","question":"Windows에서 AsterDesk를 설치하려면 어떻게 해야 하나요?","category":"fact","gold_doc_ids":["01_installation"],"answerable":true}
-{"id":"S02","question":"계정이 잠기면 얼마나 기다려야 하나요?","category":"fact","gold_doc_ids":["02_account_access"],"answerable":true}
-{"id":"S03","question":"ERR-NET-403 오류는 왜 발생하나요?","category":"keyword","gold_doc_ids":["03_network","05_error_codes"],"answerable":true}
-{"id":"S04","question":"Linux 백업 경로가 어디인가요?","category":"keyword","gold_doc_ids":["04_backup_restore"],"answerable":true}
-{"id":"S05","question":"AsterDesk Enterprise의 가격은 얼마인가요?","category":"unanswerable","gold_doc_ids":[],"answerable":false}
+{"id":"S01","question":"Windows에서 DEMO-RAG-2026을 설치하려면 어떻게 해야 하나요?","category":"fact","gold_doc_ids":["01_installation"],"gold_doc_policy":"any","answerable":true}
+{"id":"S02","question":"계정이 잠기면 얼마나 기다려야 하나요?","category":"fact","gold_doc_ids":["02_account_access"],"gold_doc_policy":"any","answerable":true}
+{"id":"S03","question":"ERR-NET-403 오류는 왜 발생하나요?","category":"keyword","gold_doc_ids":["03_network","05_error_codes"],"gold_doc_policy":"any","answerable":true}
+{"id":"S04","question":"Linux 백업 경로가 어디인가요?","category":"keyword","gold_doc_ids":["04_backup_restore"],"gold_doc_policy":"any","answerable":true}
+{"id":"S05","question":"Enterprise 라이선스의 월 사용료는 얼마인가요?","category":"unanswerable","gold_doc_ids":[],"gold_doc_policy":"any","answerable":false}

@@ -1,4 +1,4 @@
-# AsterDesk 보안 운영 가이드
+# DEMO-RAG-2026 보안 운영 가이드
 
 관리자 계정에는 MFA를 반드시 적용한다.
 API Key와 Access Token은 소스 코드나 Git 저장소에 저장하지 않는다.
