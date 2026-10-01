@@ -11,6 +11,7 @@ from src.evaluation import (
     compare_rank,
     evaluate_retriever,
     format_doc_ids,
+    format_docs_markdown,
     generation_auto_checks,
     load_gold_set,
 )
@@ -185,6 +186,14 @@ def build_report(
                 f"- Improved Keyword Coverage: {fmt(improved['keyword_coverage'])}",
                 f"- Baseline Top-{TOP_K}: {format_doc_ids(base['docs'])}",
                 f"- Improved Top-{TOP_K}: {format_doc_ids(improved['docs'])}",
+                "",
+                "**Baseline 검색 문서**",
+                "",
+                format_docs_markdown(base["docs"]),
+                "",
+                "**Improved 검색 문서**",
+                "",
+                format_docs_markdown(improved["docs"]),
                 "",
             ]
         )
