@@ -1,4 +1,8 @@
-langchain
-langchain-openai
-faiss-cpu
-python-dotenv
+langchain==1.4.2
+langchain-openai==1.6.3
+langchain-community==0.4.2
+langchain-classic==1.0.8
+langchain-text-splitters==1.1.2
+faiss-cpu==1.15.1
+python-dotenv==1.2.3
+rank-bm25==0.2.2
