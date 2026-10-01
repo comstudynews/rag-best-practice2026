@@ -179,6 +179,10 @@ rag-best-practice2026/
 
 교재의 단일 제출 파일 `src/capstone_compare.py`에 대응하는 진입점을 유지하되, Best Practice에서는 유지보수성을 위해 내부 기능을 여러 모듈로 분리했습니다.
 
+> **경로 안내**  
+> 이 저장소는 별도의 Best Practice 저장소이므로 프로젝트 루트가 교재의 `final_capstone/practice/`에 해당합니다.  
+> 실제 종합실습 제출 시에는 교재 안내에 따라 `final_capstone/practice/src/capstone_compare.py`, `final_capstone/practice/results/design.md`, `final_capstone/practice/results/evaluation.md` 구조를 따릅니다.
+
 ## 5. 실행
 
 ### 5.1 환경 구성
