@@ -131,15 +131,18 @@ AI 생성 결과를 검수 없이 Gold Set으로 사용하지 않습니다.
 
 ## 4. 제출물
 
-교재 기준 핵심 제출물:
+교재 기준 실제 제출 구조:
 
 ```text
-src/capstone_compare.py
-results/design.md
-results/evaluation.md
+final_capstone/practice/
+├── src/
+│   └── capstone_compare.py
+└── results/
+    ├── design.md
+    └── evaluation.md
 ```
 
-Best Practice 저장소에서는 코드의 유지보수성을 위해 내부 구현을 여러 파일로 분리했지만, `capstone_compare.py`를 전체 실행 진입점으로 유지합니다.
+이 Best Practice 저장소는 별도 Repository이므로 저장소 루트가 `final_capstone/practice/`에 해당합니다. 코드의 유지보수성을 위해 내부 구현을 여러 파일로 분리했지만, `src/capstone_compare.py`를 전체 실행 진입점으로 유지합니다.
 
 ## 5. 진행 안내
 
